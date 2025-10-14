@@ -13,3 +13,443 @@
  *= require_tree .
  *= require_self
  */
+
+
+ul {
+  list-style: none;
+}
+
+ a {
+  color: #333;
+  text-decoration: none; /* 下線を消す */
+}
+
+.apple-btn, .google-btn {
+  width: 240px;
+  height: 80px;
+  padding: 16px; 
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*トップページヘッダー*/
+.top-page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;               
+  max-width: 1300px;          
+  margin: 0 auto;            
+  padding: 20px 0;
+  gap: 200px; 
+}
+
+.furima-icon {
+  width: 200px;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lists-left {
+  font-size: 20px;
+  display: flex; 
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;               
+  justify-content: flex-start; 
+}
+
+.lists-right {
+  font-size: 20px;
+  display: flex; 
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;             
+  justify-content: flex-end;
+}
+
+.search-button {
+  background-color: turquoise;
+  color: white;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  width: 24px;     
+  height: 24px;
+  display: block;    
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.input-box {
+  width: 100%; 
+  max-width: 1000px; 
+  padding: 8px;
+  font-size: 16px;
+}
+/*ここまでトップページヘッダー*/
+
+/*ここからタイトルコンテンツ*/
+.title-contents {
+  margin-top: 40px;
+  background-image: url("furima-header01.png");
+  background-size: cover;
+  background-position: top;
+  padding: 20px 0px;
+}
+
+.service-title {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.service-explain {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 30px;
+  max-width: 1300px;
+  margin-left: 260px;
+}
+/*ここまでがタイトルコンテンツ*/
+
+/*ここから3つの理由*/
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.reason-lists {
+  display: flex;
+  justify-content: center;  
+  gap: 200px; 
+  flex-wrap: wrap; /* ← これがないと狭い画面で崩れる */
+  padding: 0;
+  list-style: none;
+}
+
+.list {
+  position: relative;
+  max-width: 300px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.reason-list-number {
+  position: absolute;
+  color: white;
+  background-color: turquoise;
+  padding: 20px 30px;
+  font-weight: bold;
+  font-size: 25px;
+  top: 0;
+  left: 0;
+}
+
+.list-pict {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.reason-list-blue-text {
+  color: turquoise;
+}
+
+.reason-list-description {
+  text-align: left; 
+}
+/*ここまで3つの理由*/
+
+/*会員数日本一*/
+.ad-contents {
+  background-image: url("furima-header02.png");
+  margin-top: 0;
+  background-size: cover;
+  background-position: top;
+  padding: 20px 0;
+}
+
+.ad-title {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.ad-explain {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+/*会員数日本一*/
+
+/*FULIMAの特徴*/
+.feature-contents {
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.feature-contents .title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: turquoise;
+  margin: 5px auto 0;
+  border-radius: 2px;
+}
+
+.feature-lists {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  list-style: none;
+}
+
+.feature-list-description {
+  text-align: left; 
+}
+/*FULIMAの特徴ここまで*/
+
+/*ピックアップカテゴリー*/
+.item-contents {
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto; /* ← 中央揃え */
+  text-align: center;
+}
+
+.item-contents .title {
+  margin-bottom: 8px; /* ← タイトルの下の余白を小さくする */
+  font-size: 47px;
+}
+
+.subtitle {
+  text-align: center;
+  color: turquoise;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.item-lists {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;       
+}
+
+.item-img {
+  width: 300px;   /* 横幅を指定（例：150px） */
+  height: 300px;  /* 高さは自動で比率を保つ */ 
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   
+  margin-left: 20px;
+  text-align: left;     
+}
+
+.item-name {
+  margin-bottom: 4px; /* デフォルトが大きい場合は小さくする */
+  color: #333; 
+}
+
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+}
+
+.star-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 20px;
+  justify-content: flex-end;   
+  margin-right: 20px;        
+  text-align: right;
+}
+
+.star-icon {
+  height: 20px;
+}
+
+.star-count{
+  width: 16px;
+  color: #333;
+}
+/*ピックアップカテゴリーここまで*/
+
+/*フッターコンテンツ*/
+.ad-footer-contents {
+  background-image: url("furima-footer.png");
+  background-size: cover;
+  background-position: top;
+
+}
+
+.ad-footer-explain {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
+}
+
+.ad-footer-title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.ad-footer-contents .store-btn {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  
+}
+
+/*ここまでフッターコンテンツ*/
+
+/*ここからフッター*/
+.footer-contents{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  background-color: black;
+  color: white;
+}
+
+.furima-details {
+  text-align: center; 
+}
+
+.furima-details ul {
+  display: inline-block;
+  text-align: center; /* ← リスト項目も中央揃えに */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.furima-details li {
+  margin-bottom: 6px;
+}
+
+.footer-link,
+.footer-link:visited,
+.footer-link:hover,
+.footer-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0 ;
+}
+
+.footer p {
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.logo-white {
+  width: 150px; /* サイズ調整はお好みで */
+  height: auto;
+  margin: 20px auto 0;
+}
+
+.purchase-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 80px;         /* 正方形の横幅 */
+  height: 90px;        /* 正方形の高さ */
+  background-color: turquoise;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.purchase-btn-text {
+  font-size: 18px;
+  color: white;
+}
+
+.purchase-btn-icon {
+  width: 55px;
+  height: 50px;
+}
