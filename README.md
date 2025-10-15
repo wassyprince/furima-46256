@@ -75,6 +75,7 @@ has_one :address
 | city           | string     | null: false                   |
 | street         | string     | null: false                   |
 | building       | string     | null: true                    |
+| phone          | string     | null: false                   |
 | order          | references | null: false, foreign_key:true |
 
 ### Association
