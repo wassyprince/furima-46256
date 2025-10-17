@@ -5,12 +5,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
-  VALID_NAME_REGEX = /\A[ぁ-んァ-ン一-龥々ー]+\z/
+  # VALID_NAME_REGEX = /\A[ぁ-んァ-ン一-龥々ー]+\z/
+  VALID_NAME_REGEX = /\A[ぁ-んァ-ン一-龥々ーヴヶ]+\z/
   VALID_KANA_REGEX = /\A[ァ-ヴー]+\z/
 
   validates :nickname, presence: true
-  validates :email, presence: true, uniqueness: true
-  validates :encrypted_password, presence: true
+  # validates :email, presence: true, uniqueness: true
+  # validates :encrypted_password, presence: true
   validates :birthday, presence: true
 
   validates :password, format: { with: VALID_PASSWORD_REGEX, message: 'は半角英数字を両方含む必要があります' }
