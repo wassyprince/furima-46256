@@ -49,6 +49,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails', '~> 4.0.0'
   gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
@@ -80,3 +81,7 @@ gem 'devise'
 gem 'active_hash'
 
 gem 'pry-rails'
+
+gem 'payjp'
+
+gem 'gon'
